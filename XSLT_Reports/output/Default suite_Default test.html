@@ -1,0 +1,1086 @@
+<html xmlns:math="http://exslt.org/math" xmlns:testng="http://testng.org">
+   <head>
+      <title>TestNG Results</title>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8"></meta>
+      <meta http-equiv="pragma" content="no-cache"></meta>
+      <meta http-equiv="cache-control" content="max-age=0"></meta>
+      <meta http-equiv="cache-control" content="no-cache"></meta>
+      <meta http-equiv="cache-control" content="no-store"></meta>
+      <LINK rel="stylesheet" href="style.css"></LINK>
+      <script type="text/javascript" src="main.js"></script>
+   </head>
+   <body>
+      <table width="100%" style="font-size: 16px; margin-bottom: 10px;" cellspacing="1">
+         <tr>
+            <td width="100%">
+               Test case
+               
+               <b>Default test</b>
+            </td>
+            <td style="background-color: #FFBBBB; padding: 3px 3px 3px 0;" align="center">
+               <div style="width: 50px;">3</div>
+            </td>
+            <td style="background-color: lightgreen; padding: 3px 3px 3px 0;" align="center">
+               <div style="width: 50px;">0</div>
+            </td>
+            <td style="background-color: #FFFFBB; padding: 3px 3px 3px 0;" align="center">
+               <div style="width: 50px;">0</div>
+            </td>
+            <td align="center" style="background-color: #eaf0f7; padding: 3px 3px 3px 0;">
+               <div style="width: 50px;">3</div>
+            </td>
+            <td align="center"
+                style="font-weight: bold; background-color: #eaf0f7; padding: 3px 3px 3px 0;">
+               <div style="width: 50px;">0%</div>
+            </td>
+            <td style="background-color: #eaf0f7; padding: 3px 3px 3px 0;" align="center"
+                nowrap="true">8s
+               
+            </td>
+         </tr>
+      </table>
+      <div style="width: 200px;">
+         <label for="groupMethodsCheckBox" style="font-weight: bold; margin: 0;">
+            <input id="groupMethodsCheckBox" type="checkbox" onclick="switchTestMethodsView(this)"></input>
+            Group by class
+            
+         </label>
+         <br></br>
+         <label for="methodsFilter_ALL" style="font-weight: bold; margin: 0;">
+            <input id="methodsFilter_ALL" type="checkbox"
+                   onclick="testMethodsFilterChanged(this, 'ALL')"></input>
+            All
+            
+         </label>
+      </div>
+      <label for="methodsFilter_FAIL" style="margin-left: 20px;">
+         <input id="methodsFilter_FAIL" type="checkbox"
+                onclick="testMethodsFilterChanged(this, 'FAIL')"
+                checked=""></input>
+         Failed
+         
+      </label>
+      <label for="methodsFilter_PASS">
+         <input id="methodsFilter_PASS" type="checkbox"
+                onclick="testMethodsFilterChanged(this, 'PASS')"
+                checked=""></input>
+         Passed
+         
+      </label>
+      <label for="methodsFilter_SKIP">
+         <input id="methodsFilter_SKIP" type="checkbox"
+                onclick="testMethodsFilterChanged(this, 'SKIP')"
+                checked=""></input>
+         Skipped
+         
+      </label>
+      <label for="methodsFilter_CONF">
+         <input id="methodsFilter_CONF" type="checkbox"
+                onclick="testMethodsFilterChanged(this, 'CONF')"></input>
+         Config
+         
+      </label>
+      <br></br>
+      <div id="testMethodsByStatus">
+         <table class="testMethodsTable" cellpadding="0" cellspacing="0">
+            <tr class="methodsTableHeader">
+               <td width="100%">Name</td>
+               <td nowrap="true">Started</td>
+               <td nowrap="true">Duration</td>
+               <td>Exception</td>
+            </tr>
+            <tr id="ScreenShotFailed.SSfailedTest_Test1_byStatus_failed_FAIL1_row"
+                class="testMethodStatusFAIL">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('ScreenShotFailed.SSfailedTest_Test1_byStatus_failed_FAIL1_details')">Test1()</a>
+               </td>
+               <td nowrap="true">21:30:06</td>
+               <td nowrap="true" align="right">4 ms
+                  
+               </td>
+               <td nowrap="true">
+                  <a onclick="toggleDetailsVisibility('ScreenShotFailed.SSfailedTest_Test1_byStatus_failed_FAIL1_exception')">java.lang.AssertionError: 
+                     expected [true] but found [false]
+                     
+                  </a>
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="ScreenShotFailed.SSfailedTest_Test1_byStatus_failed_FAIL1_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>Test1
+                     </div>
+                     <div>
+                        <b>Signature: </b>Test1()[pri:0, instance:ScreenShotFailed.SSfailedTest@50ad3bc1]
+                     </div>
+                     <div>
+                        <b>Start time: </b>21:30:06
+                     </div>
+                     <div>
+                        <b>End time: </b>21:30:06
+                     </div>
+                     <div>
+                        <b>Duration: </b>4 ms
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="ScreenShotFailed.SSfailedTest_Test1_byStatus_failed_FAIL1_exception"
+                       class="testMethodDetails">
+                     <pre style="padding: 5px; margin: 0;">java.lang.AssertionError: expected [true] but found [false]
+                        at org.testng.Assert.fail(Assert.java:99)
+                        at org.testng.Assert.failNotEquals(Assert.java:1037)
+                        at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+                        at org.testng.Assert.assertEquals(Assert.java:122)
+                        at org.testng.Assert.assertEquals(Assert.java:819)
+                        at org.testng.Assert.assertEquals(Assert.java:829)
+                        at ScreenShotFailed.SSfailedTest.Test1(SSfailedTest.java:24)
+                        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+                        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+                        at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+                        at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+                        at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+                        at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+                        at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+                        at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+                        at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+                        at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+                        at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+                        at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+                        at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+                        at org.testng.TestRunner.privateRun(TestRunner.java:794)
+                        at org.testng.TestRunner.run(TestRunner.java:596)
+                        at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+                        at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+                        at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+                        at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+                        at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+                        at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+                        at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+                        at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+                        at org.testng.TestNG.runSuites(TestNG.java:1063)
+                        at org.testng.TestNG.run(TestNG.java:1031)
+                        at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+                        at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+                        at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+                     </pre>
+                  </div>
+               </td>
+            </tr>
+            <tr id="ScreenShotFailed.SSfailedTest_Test2_byStatus_failed_FAIL2_row"
+                class="testMethodStatusFAIL">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('ScreenShotFailed.SSfailedTest_Test2_byStatus_failed_FAIL2_details')">Test2()</a>
+               </td>
+               <td nowrap="true">21:30:08</td>
+               <td nowrap="true" align="right">0 ms
+                  
+               </td>
+               <td nowrap="true">
+                  <a onclick="toggleDetailsVisibility('ScreenShotFailed.SSfailedTest_Test2_byStatus_failed_FAIL2_exception')">java.lang.AssertionError: 
+                     expected [true] but found [false]
+                     
+                  </a>
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="ScreenShotFailed.SSfailedTest_Test2_byStatus_failed_FAIL2_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>Test2
+                     </div>
+                     <div>
+                        <b>Signature: </b>Test2()[pri:0, instance:ScreenShotFailed.SSfailedTest@50ad3bc1]
+                     </div>
+                     <div>
+                        <b>Start time: </b>21:30:08
+                     </div>
+                     <div>
+                        <b>End time: </b>21:30:08
+                     </div>
+                     <div>
+                        <b>Duration: </b>0 ms
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="ScreenShotFailed.SSfailedTest_Test2_byStatus_failed_FAIL2_exception"
+                       class="testMethodDetails">
+                     <pre style="padding: 5px; margin: 0;">java.lang.AssertionError: expected [true] but found [false]
+                        at org.testng.Assert.fail(Assert.java:99)
+                        at org.testng.Assert.failNotEquals(Assert.java:1037)
+                        at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+                        at org.testng.Assert.assertEquals(Assert.java:122)
+                        at org.testng.Assert.assertEquals(Assert.java:819)
+                        at org.testng.Assert.assertEquals(Assert.java:829)
+                        at ScreenShotFailed.SSfailedTest.Test2(SSfailedTest.java:29)
+                        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+                        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+                        at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+                        at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+                        at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+                        at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+                        at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+                        at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+                        at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+                        at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+                        at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+                        at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+                        at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+                        at org.testng.TestRunner.privateRun(TestRunner.java:794)
+                        at org.testng.TestRunner.run(TestRunner.java:596)
+                        at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+                        at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+                        at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+                        at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+                        at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+                        at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+                        at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+                        at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+                        at org.testng.TestNG.runSuites(TestNG.java:1063)
+                        at org.testng.TestNG.run(TestNG.java:1031)
+                        at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+                        at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+                        at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+                     </pre>
+                  </div>
+               </td>
+            </tr>
+            <tr id="ScreenShotFailed.SSfailedTest_Test3_byStatus_failed_FAIL3_row"
+                class="testMethodStatusFAIL">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('ScreenShotFailed.SSfailedTest_Test3_byStatus_failed_FAIL3_details')">Test3()</a>
+               </td>
+               <td nowrap="true">21:30:11</td>
+               <td nowrap="true" align="right">1 ms
+                  
+               </td>
+               <td nowrap="true">
+                  <a onclick="toggleDetailsVisibility('ScreenShotFailed.SSfailedTest_Test3_byStatus_failed_FAIL3_exception')">java.lang.AssertionError: 
+                     expected [true] but found [false]
+                     
+                  </a>
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="ScreenShotFailed.SSfailedTest_Test3_byStatus_failed_FAIL3_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>Test3
+                     </div>
+                     <div>
+                        <b>Signature: </b>Test3()[pri:0, instance:ScreenShotFailed.SSfailedTest@50ad3bc1]
+                     </div>
+                     <div>
+                        <b>Start time: </b>21:30:11
+                     </div>
+                     <div>
+                        <b>End time: </b>21:30:11
+                     </div>
+                     <div>
+                        <b>Duration: </b>1 ms
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="ScreenShotFailed.SSfailedTest_Test3_byStatus_failed_FAIL3_exception"
+                       class="testMethodDetails">
+                     <pre style="padding: 5px; margin: 0;">java.lang.AssertionError: expected [true] but found [false]
+                        at org.testng.Assert.fail(Assert.java:99)
+                        at org.testng.Assert.failNotEquals(Assert.java:1037)
+                        at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+                        at org.testng.Assert.assertEquals(Assert.java:122)
+                        at org.testng.Assert.assertEquals(Assert.java:819)
+                        at org.testng.Assert.assertEquals(Assert.java:829)
+                        at ScreenShotFailed.SSfailedTest.Test3(SSfailedTest.java:34)
+                        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+                        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+                        at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+                        at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+                        at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+                        at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+                        at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+                        at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+                        at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+                        at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+                        at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+                        at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+                        at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+                        at org.testng.TestRunner.privateRun(TestRunner.java:794)
+                        at org.testng.TestRunner.run(TestRunner.java:596)
+                        at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+                        at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+                        at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+                        at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+                        at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+                        at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+                        at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+                        at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+                        at org.testng.TestNG.runSuites(TestNG.java:1063)
+                        at org.testng.TestNG.run(TestNG.java:1031)
+                        at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+                        at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+                        at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+                     </pre>
+                  </div>
+               </td>
+            </tr>
+            <tr id="ScreenShotFailed.SSfailedTest_setup_byStatus_passed_PASS1_row"
+                class="testMethodStatusPASS testMethodStatusCONF">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('ScreenShotFailed.SSfailedTest_setup_byStatus_passed_PASS1_details')">setup()</a>
+               </td>
+               <td nowrap="true">21:30:03</td>
+               <td nowrap="true" align="right">2s
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="ScreenShotFailed.SSfailedTest_setup_byStatus_passed_PASS1_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>setup
+                     </div>
+                     <div>
+                        <b>Signature: </b>setup()[pri:0, instance:ScreenShotFailed.SSfailedTest@50ad3bc1]
+                     </div>
+                     <div>
+                        <b>Start time: </b>21:30:03
+                     </div>
+                     <div>
+                        <b>End time: </b>21:30:06
+                     </div>
+                     <div>
+                        <b>Duration: </b>2s
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+            <tr id="ScreenShotFailed.SSfailedTest_teardown_byStatus_passed_PASS2_row"
+                class="testMethodStatusPASS testMethodStatusCONF">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('ScreenShotFailed.SSfailedTest_teardown_byStatus_passed_PASS2_details')">teardown()</a>
+               </td>
+               <td nowrap="true">21:30:06</td>
+               <td nowrap="true" align="right">607 ms
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="ScreenShotFailed.SSfailedTest_teardown_byStatus_passed_PASS2_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>teardown
+                     </div>
+                     <div>
+                        <b>Signature: </b>teardown()[pri:0, instance:ScreenShotFailed.SSfailedTest@50ad3bc1]
+                     </div>
+                     <div>
+                        <b>Start time: </b>21:30:06
+                     </div>
+                     <div>
+                        <b>End time: </b>21:30:06
+                     </div>
+                     <div>
+                        <b>Duration: </b>607 ms
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+            <tr id="ScreenShotFailed.SSfailedTest_setup_byStatus_passed_PASS3_row"
+                class="testMethodStatusPASS testMethodStatusCONF">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('ScreenShotFailed.SSfailedTest_setup_byStatus_passed_PASS3_details')">setup()</a>
+               </td>
+               <td nowrap="true">21:30:06</td>
+               <td nowrap="true" align="right">1s
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="ScreenShotFailed.SSfailedTest_setup_byStatus_passed_PASS3_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>setup
+                     </div>
+                     <div>
+                        <b>Signature: </b>setup()[pri:0, instance:ScreenShotFailed.SSfailedTest@50ad3bc1]
+                     </div>
+                     <div>
+                        <b>Start time: </b>21:30:06
+                     </div>
+                     <div>
+                        <b>End time: </b>21:30:08
+                     </div>
+                     <div>
+                        <b>Duration: </b>1s
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+            <tr id="ScreenShotFailed.SSfailedTest_teardown_byStatus_passed_PASS4_row"
+                class="testMethodStatusPASS testMethodStatusCONF">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('ScreenShotFailed.SSfailedTest_teardown_byStatus_passed_PASS4_details')">teardown()</a>
+               </td>
+               <td nowrap="true">21:30:08</td>
+               <td nowrap="true" align="right">584 ms
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="ScreenShotFailed.SSfailedTest_teardown_byStatus_passed_PASS4_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>teardown
+                     </div>
+                     <div>
+                        <b>Signature: </b>teardown()[pri:0, instance:ScreenShotFailed.SSfailedTest@50ad3bc1]
+                     </div>
+                     <div>
+                        <b>Start time: </b>21:30:08
+                     </div>
+                     <div>
+                        <b>End time: </b>21:30:09
+                     </div>
+                     <div>
+                        <b>Duration: </b>584 ms
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+            <tr id="ScreenShotFailed.SSfailedTest_setup_byStatus_passed_PASS5_row"
+                class="testMethodStatusPASS testMethodStatusCONF">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('ScreenShotFailed.SSfailedTest_setup_byStatus_passed_PASS5_details')">setup()</a>
+               </td>
+               <td nowrap="true">21:30:09</td>
+               <td nowrap="true" align="right">1s
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="ScreenShotFailed.SSfailedTest_setup_byStatus_passed_PASS5_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>setup
+                     </div>
+                     <div>
+                        <b>Signature: </b>setup()[pri:0, instance:ScreenShotFailed.SSfailedTest@50ad3bc1]
+                     </div>
+                     <div>
+                        <b>Start time: </b>21:30:09
+                     </div>
+                     <div>
+                        <b>End time: </b>21:30:11
+                     </div>
+                     <div>
+                        <b>Duration: </b>1s
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+            <tr id="ScreenShotFailed.SSfailedTest_teardown_byStatus_passed_PASS6_row"
+                class="testMethodStatusPASS testMethodStatusCONF">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('ScreenShotFailed.SSfailedTest_teardown_byStatus_passed_PASS6_details')">teardown()</a>
+               </td>
+               <td nowrap="true">21:30:11</td>
+               <td nowrap="true" align="right">594 ms
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="ScreenShotFailed.SSfailedTest_teardown_byStatus_passed_PASS6_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>teardown
+                     </div>
+                     <div>
+                        <b>Signature: </b>teardown()[pri:0, instance:ScreenShotFailed.SSfailedTest@50ad3bc1]
+                     </div>
+                     <div>
+                        <b>Start time: </b>21:30:11
+                     </div>
+                     <div>
+                        <b>End time: </b>21:30:11
+                     </div>
+                     <div>
+                        <b>Duration: </b>594 ms
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+         </table>
+      </div>
+      <div id="testMethodsByClass" style="display: none;">
+         <table class="testMethodsTable" cellpadding="0" cellspacing="0">
+            <tr>
+               <td colspan="4">
+                  <h3 style="display: inline;">ScreenShotFailed.SSfailedTest</h3>
+               </td>
+            </tr>
+            <tr class="methodsTableHeader">
+               <td width="100%">Name</td>
+               <td nowrap="true">Started</td>
+               <td nowrap="true">Duration</td>
+               <td>Exception</td>
+            </tr>
+            <tr id="ScreenShotFailed.SSfailedTest_setup_byClass_PASS1_row"
+                class="testMethodStatusPASS testMethodStatusCONF">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('ScreenShotFailed.SSfailedTest_setup_byClass_PASS1_details')">setup()</a>
+               </td>
+               <td nowrap="true">21:30:03</td>
+               <td nowrap="true" align="right">2s
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="ScreenShotFailed.SSfailedTest_setup_byClass_PASS1_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>setup
+                     </div>
+                     <div>
+                        <b>Signature: </b>setup()[pri:0, instance:ScreenShotFailed.SSfailedTest@50ad3bc1]
+                     </div>
+                     <div>
+                        <b>Start time: </b>21:30:03
+                     </div>
+                     <div>
+                        <b>End time: </b>21:30:06
+                     </div>
+                     <div>
+                        <b>Duration: </b>2s
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+            <tr id="ScreenShotFailed.SSfailedTest_Test1_byClass_FAIL2_row"
+                class="testMethodStatusFAIL">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('ScreenShotFailed.SSfailedTest_Test1_byClass_FAIL2_details')">Test1()</a>
+               </td>
+               <td nowrap="true">21:30:06</td>
+               <td nowrap="true" align="right">4 ms
+                  
+               </td>
+               <td nowrap="true">
+                  <a onclick="toggleDetailsVisibility('ScreenShotFailed.SSfailedTest_Test1_byClass_FAIL2_exception')">java.lang.AssertionError: 
+                     expected [true] but found [false]
+                     
+                  </a>
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="ScreenShotFailed.SSfailedTest_Test1_byClass_FAIL2_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>Test1
+                     </div>
+                     <div>
+                        <b>Signature: </b>Test1()[pri:0, instance:ScreenShotFailed.SSfailedTest@50ad3bc1]
+                     </div>
+                     <div>
+                        <b>Start time: </b>21:30:06
+                     </div>
+                     <div>
+                        <b>End time: </b>21:30:06
+                     </div>
+                     <div>
+                        <b>Duration: </b>4 ms
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="ScreenShotFailed.SSfailedTest_Test1_byClass_FAIL2_exception"
+                       class="testMethodDetails">
+                     <pre style="padding: 5px; margin: 0;">java.lang.AssertionError: expected [true] but found [false]
+                        at org.testng.Assert.fail(Assert.java:99)
+                        at org.testng.Assert.failNotEquals(Assert.java:1037)
+                        at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+                        at org.testng.Assert.assertEquals(Assert.java:122)
+                        at org.testng.Assert.assertEquals(Assert.java:819)
+                        at org.testng.Assert.assertEquals(Assert.java:829)
+                        at ScreenShotFailed.SSfailedTest.Test1(SSfailedTest.java:24)
+                        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+                        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+                        at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+                        at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+                        at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+                        at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+                        at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+                        at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+                        at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+                        at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+                        at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+                        at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+                        at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+                        at org.testng.TestRunner.privateRun(TestRunner.java:794)
+                        at org.testng.TestRunner.run(TestRunner.java:596)
+                        at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+                        at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+                        at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+                        at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+                        at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+                        at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+                        at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+                        at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+                        at org.testng.TestNG.runSuites(TestNG.java:1063)
+                        at org.testng.TestNG.run(TestNG.java:1031)
+                        at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+                        at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+                        at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+                     </pre>
+                  </div>
+               </td>
+            </tr>
+            <tr id="ScreenShotFailed.SSfailedTest_teardown_byClass_PASS3_row"
+                class="testMethodStatusPASS testMethodStatusCONF">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('ScreenShotFailed.SSfailedTest_teardown_byClass_PASS3_details')">teardown()</a>
+               </td>
+               <td nowrap="true">21:30:06</td>
+               <td nowrap="true" align="right">607 ms
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="ScreenShotFailed.SSfailedTest_teardown_byClass_PASS3_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>teardown
+                     </div>
+                     <div>
+                        <b>Signature: </b>teardown()[pri:0, instance:ScreenShotFailed.SSfailedTest@50ad3bc1]
+                     </div>
+                     <div>
+                        <b>Start time: </b>21:30:06
+                     </div>
+                     <div>
+                        <b>End time: </b>21:30:06
+                     </div>
+                     <div>
+                        <b>Duration: </b>607 ms
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+            <tr id="ScreenShotFailed.SSfailedTest_setup_byClass_PASS4_row"
+                class="testMethodStatusPASS testMethodStatusCONF">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('ScreenShotFailed.SSfailedTest_setup_byClass_PASS4_details')">setup()</a>
+               </td>
+               <td nowrap="true">21:30:06</td>
+               <td nowrap="true" align="right">1s
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="ScreenShotFailed.SSfailedTest_setup_byClass_PASS4_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>setup
+                     </div>
+                     <div>
+                        <b>Signature: </b>setup()[pri:0, instance:ScreenShotFailed.SSfailedTest@50ad3bc1]
+                     </div>
+                     <div>
+                        <b>Start time: </b>21:30:06
+                     </div>
+                     <div>
+                        <b>End time: </b>21:30:08
+                     </div>
+                     <div>
+                        <b>Duration: </b>1s
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+            <tr id="ScreenShotFailed.SSfailedTest_Test2_byClass_FAIL5_row"
+                class="testMethodStatusFAIL">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('ScreenShotFailed.SSfailedTest_Test2_byClass_FAIL5_details')">Test2()</a>
+               </td>
+               <td nowrap="true">21:30:08</td>
+               <td nowrap="true" align="right">0 ms
+                  
+               </td>
+               <td nowrap="true">
+                  <a onclick="toggleDetailsVisibility('ScreenShotFailed.SSfailedTest_Test2_byClass_FAIL5_exception')">java.lang.AssertionError: 
+                     expected [true] but found [false]
+                     
+                  </a>
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="ScreenShotFailed.SSfailedTest_Test2_byClass_FAIL5_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>Test2
+                     </div>
+                     <div>
+                        <b>Signature: </b>Test2()[pri:0, instance:ScreenShotFailed.SSfailedTest@50ad3bc1]
+                     </div>
+                     <div>
+                        <b>Start time: </b>21:30:08
+                     </div>
+                     <div>
+                        <b>End time: </b>21:30:08
+                     </div>
+                     <div>
+                        <b>Duration: </b>0 ms
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="ScreenShotFailed.SSfailedTest_Test2_byClass_FAIL5_exception"
+                       class="testMethodDetails">
+                     <pre style="padding: 5px; margin: 0;">java.lang.AssertionError: expected [true] but found [false]
+                        at org.testng.Assert.fail(Assert.java:99)
+                        at org.testng.Assert.failNotEquals(Assert.java:1037)
+                        at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+                        at org.testng.Assert.assertEquals(Assert.java:122)
+                        at org.testng.Assert.assertEquals(Assert.java:819)
+                        at org.testng.Assert.assertEquals(Assert.java:829)
+                        at ScreenShotFailed.SSfailedTest.Test2(SSfailedTest.java:29)
+                        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+                        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+                        at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+                        at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+                        at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+                        at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+                        at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+                        at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+                        at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+                        at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+                        at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+                        at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+                        at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+                        at org.testng.TestRunner.privateRun(TestRunner.java:794)
+                        at org.testng.TestRunner.run(TestRunner.java:596)
+                        at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+                        at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+                        at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+                        at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+                        at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+                        at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+                        at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+                        at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+                        at org.testng.TestNG.runSuites(TestNG.java:1063)
+                        at org.testng.TestNG.run(TestNG.java:1031)
+                        at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+                        at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+                        at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+                     </pre>
+                  </div>
+               </td>
+            </tr>
+            <tr id="ScreenShotFailed.SSfailedTest_teardown_byClass_PASS6_row"
+                class="testMethodStatusPASS testMethodStatusCONF">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('ScreenShotFailed.SSfailedTest_teardown_byClass_PASS6_details')">teardown()</a>
+               </td>
+               <td nowrap="true">21:30:08</td>
+               <td nowrap="true" align="right">584 ms
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="ScreenShotFailed.SSfailedTest_teardown_byClass_PASS6_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>teardown
+                     </div>
+                     <div>
+                        <b>Signature: </b>teardown()[pri:0, instance:ScreenShotFailed.SSfailedTest@50ad3bc1]
+                     </div>
+                     <div>
+                        <b>Start time: </b>21:30:08
+                     </div>
+                     <div>
+                        <b>End time: </b>21:30:09
+                     </div>
+                     <div>
+                        <b>Duration: </b>584 ms
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+            <tr id="ScreenShotFailed.SSfailedTest_setup_byClass_PASS7_row"
+                class="testMethodStatusPASS testMethodStatusCONF">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('ScreenShotFailed.SSfailedTest_setup_byClass_PASS7_details')">setup()</a>
+               </td>
+               <td nowrap="true">21:30:09</td>
+               <td nowrap="true" align="right">1s
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="ScreenShotFailed.SSfailedTest_setup_byClass_PASS7_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>setup
+                     </div>
+                     <div>
+                        <b>Signature: </b>setup()[pri:0, instance:ScreenShotFailed.SSfailedTest@50ad3bc1]
+                     </div>
+                     <div>
+                        <b>Start time: </b>21:30:09
+                     </div>
+                     <div>
+                        <b>End time: </b>21:30:11
+                     </div>
+                     <div>
+                        <b>Duration: </b>1s
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+            <tr id="ScreenShotFailed.SSfailedTest_Test3_byClass_FAIL8_row"
+                class="testMethodStatusFAIL">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('ScreenShotFailed.SSfailedTest_Test3_byClass_FAIL8_details')">Test3()</a>
+               </td>
+               <td nowrap="true">21:30:11</td>
+               <td nowrap="true" align="right">1 ms
+                  
+               </td>
+               <td nowrap="true">
+                  <a onclick="toggleDetailsVisibility('ScreenShotFailed.SSfailedTest_Test3_byClass_FAIL8_exception')">java.lang.AssertionError: 
+                     expected [true] but found [false]
+                     
+                  </a>
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="ScreenShotFailed.SSfailedTest_Test3_byClass_FAIL8_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>Test3
+                     </div>
+                     <div>
+                        <b>Signature: </b>Test3()[pri:0, instance:ScreenShotFailed.SSfailedTest@50ad3bc1]
+                     </div>
+                     <div>
+                        <b>Start time: </b>21:30:11
+                     </div>
+                     <div>
+                        <b>End time: </b>21:30:11
+                     </div>
+                     <div>
+                        <b>Duration: </b>1 ms
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="ScreenShotFailed.SSfailedTest_Test3_byClass_FAIL8_exception"
+                       class="testMethodDetails">
+                     <pre style="padding: 5px; margin: 0;">java.lang.AssertionError: expected [true] but found [false]
+                        at org.testng.Assert.fail(Assert.java:99)
+                        at org.testng.Assert.failNotEquals(Assert.java:1037)
+                        at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+                        at org.testng.Assert.assertEquals(Assert.java:122)
+                        at org.testng.Assert.assertEquals(Assert.java:819)
+                        at org.testng.Assert.assertEquals(Assert.java:829)
+                        at ScreenShotFailed.SSfailedTest.Test3(SSfailedTest.java:34)
+                        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+                        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+                        at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+                        at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+                        at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+                        at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+                        at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+                        at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+                        at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+                        at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+                        at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+                        at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+                        at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+                        at org.testng.TestRunner.privateRun(TestRunner.java:794)
+                        at org.testng.TestRunner.run(TestRunner.java:596)
+                        at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+                        at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+                        at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+                        at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+                        at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+                        at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+                        at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+                        at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+                        at org.testng.TestNG.runSuites(TestNG.java:1063)
+                        at org.testng.TestNG.run(TestNG.java:1031)
+                        at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+                        at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+                        at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+                     </pre>
+                  </div>
+               </td>
+            </tr>
+            <tr id="ScreenShotFailed.SSfailedTest_teardown_byClass_PASS9_row"
+                class="testMethodStatusPASS testMethodStatusCONF">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('ScreenShotFailed.SSfailedTest_teardown_byClass_PASS9_details')">teardown()</a>
+               </td>
+               <td nowrap="true">21:30:11</td>
+               <td nowrap="true" align="right">594 ms
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="ScreenShotFailed.SSfailedTest_teardown_byClass_PASS9_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>teardown
+                     </div>
+                     <div>
+                        <b>Signature: </b>teardown()[pri:0, instance:ScreenShotFailed.SSfailedTest@50ad3bc1]
+                     </div>
+                     <div>
+                        <b>Start time: </b>21:30:11
+                     </div>
+                     <div>
+                        <b>End time: </b>21:30:11
+                     </div>
+                     <div>
+                        <b>Duration: </b>594 ms
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+         </table>
+         <br></br>
+      </div>
+      <div style="margin-top: 15px; color: gray; text-align: center; font-size: 9px;">
+         Generated with
+         
+         <a href="http://code.google.com/p/testng-xslt/" style="color: #8888aa;"
+            target="_blank">
+            TestNG XSLT
+            
+         </a>
+      </div>
+   </body>
+</html>

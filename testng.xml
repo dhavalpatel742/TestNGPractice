@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<!-- <?xml version="1.0" encoding="UTF-8"?> -->
+<suite parallel="false" name="TestNG Practice Suite">
+  <test name="TestNG Features">
+    <classes>
+      <class name="com.testng.practice.AssertionTest"/>
+      <class name="com.testng.practice.DependencyTest"/>
+      <class name="com.testng.practice.GoogleTest"/>
+      <class name="com.testng.practice.InvocationCountTest"/>
+      <class name="com.testng.practice.TestNGBasics"/>
+      </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
